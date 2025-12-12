@@ -53,9 +53,24 @@ The framework supports executing logic on multiple threads ("Jobs").
 
 --
 
-![Architecure](image.png)
+### Architecture
 
+![Architecture](Architecture.png)
 
-![BenchMark (4.000.000 Entities -> 100 iterations)](image-1.png)
+---
 
-![BenchMark (4.000.000 Entities -> 1000 iterations](image-2.png)
+### BenchMark
+The benchmark consists of *4,000,000* entities processed repeatedly for a specified number of iterations. To simulate real-world object separation and memory fragmentation, random memory blocks are allocated for regular objects.
+
+Performance was evaluated across four different systems and four different object-group update methods.
+Regular object updates are implemented using virtual functions, introducing a vtable lookup cost.
+
+Each update method includes sin and cos computations to introduce consistent mathematical workload.
+
+# Enviroment
+* g++ compiler
+* -O2 optimization level
+* WSL (Windows Subsystem for Linux)
+![BenchMark (4.000.000 Entities -> 100 iterations)](Benchmark1.png)
+
+![BenchMark (4.000.000 Entities -> 1000 iterations](Benchmark2.png)
