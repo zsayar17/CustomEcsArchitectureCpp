@@ -55,7 +55,7 @@ The framework supports executing logic on multiple threads ("Jobs").
 
 ### Architecture
 
-![Architecture](Architecture.png)
+![Architecture](Images/Architecture.png)
 
 ---
 
@@ -72,7 +72,7 @@ Each update method includes sin and cos computations to introduce consistent mat
 * -O2 optimization level
 * WSL (Windows Subsystem for Linux)
 
-![BenchMark (4.000.000 Entities -> 100 iterations)](Benchmark1.png)
+![BenchMark (4.000.000 Entities -> 100 iterations)](Images/Benchmark1.png)
 
-![BenchMark (4.000.000 Entities -> 1000 iterations](Benchmark2.png)
+![BenchMark (4.000.000 Entities -> 1000 iterations](Images/Benchmark2.png)
 
