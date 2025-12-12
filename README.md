@@ -51,7 +51,7 @@ The framework supports executing logic on multiple threads ("Jobs").
 * Thanks to the **aligned chunk architecture**, data races are minimized.
 * The system schedules jobs without compromising the cache hit rate, allowing for massive scalability in complex simulations.
 
---
+---
 
 ### Architecture
 
@@ -71,6 +71,8 @@ Each update method includes sin and cos computations to introduce consistent mat
 * g++ compiler
 * -O2 optimization level
 * WSL (Windows Subsystem for Linux)
+
 ![BenchMark (4.000.000 Entities -> 100 iterations)](Benchmark1.png)
 
 ![BenchMark (4.000.000 Entities -> 1000 iterations](Benchmark2.png)
+
